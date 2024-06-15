@@ -1,15 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Eccomerce</title>
+    <link rel="stylesheet" href="{% static 'Ecommerce/style.css' %}"></link>
 </head>
 <body>
     <h1>Welcome to the Ecommerce Home Page</h1>
+    
     <nav>
         <ul>
+            <li><a href="{% url 'Ecommerce:product_list' %}">Product List</a></li>
             <li><a href="{% url 'Ecommerce:customer_list' %}">Customer List</a></li>
+            
             <!-- Add more navigation links as needed -->
         </ul>
     </nav>

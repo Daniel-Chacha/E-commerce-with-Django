@@ -31,7 +31,7 @@ def customer_detail(request,pk):
     context={
         'customer': customer
     }
-    return render(request,'',context)
+    return render(request,'Ecommerce/customer_detail.html',context)
 
 def home(request):
     return render(request, 'Ecommerce/home.html')

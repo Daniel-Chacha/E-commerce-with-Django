@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customer Lists</title> 
+    <link rel="stylesheet" href="{% static 'Ecommerce/style.css' %}"></link>
     
   </head>
   <body>
@@ -16,6 +18,7 @@
         </li>
         {% endfor %}
     </ul>
+    <a href=" {% url 'Ecommerce:customer_list' %}" class="back-link">Back to Customer List</a>
 
   </body>
 </html>

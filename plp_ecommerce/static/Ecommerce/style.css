@@ -1,0 +1,17 @@
+body{
+    background: white  url("./media/images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: whitesmoke;
+}
+
+h2, a{
+    color: whitesmoke;
+}
+
+p{
+    color: white;
+}

@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Product List</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
- 
+  <link rel="stylesheet" href="{% static 'Ecommerce/style.css' %}"></link>
 </head>
 <body>
   <h1>Products</h1>
@@ -16,11 +17,15 @@
         <p> {{product.description}} </p>
         <p>Price: {{product.price}} </p>
         <img src=" {{product.image.url}} " alt=" {{product.name}} ">
+
+        <br>  <br>
+        <a href="{% url 'Ecommerce:product_detail' product.pk %}">View Product Detail</a>
     </li>
 {% endfor %}
-
-    
+  
   </ul>
+  
    
 </body>
+
 </html>

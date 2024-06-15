@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customer Lists</title>
+    <link rel="stylesheet" href="{% static 'Ecommerce/style.css' %}"></link>
   
   </head>
   <body>
@@ -15,11 +17,11 @@
             <p> <strong>Joined on:</strong> {{customer.created_at}} </p>
         
         </div>
-      <!-- <a href=" {% url 'customer_list' %} "class="back-link">Back to Customer List</a> -->
+      {% comment "" %} <a href=" {% url 'customer_list' %} "class="back-link">Back to Customer List</a> {% endcomment %}
     
 
     </div>
-
-
   </body>
+  {% comment "" %}<a href=" {% url 'Ecomerce:customer_list' %}" class="back-link">Back to Customer List</a>  {% endcomment %}
+
 </html>
